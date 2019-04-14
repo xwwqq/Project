@@ -126,7 +126,7 @@ def money():
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.',1)[1] in ALLOWED_EXTENSIONS
 
-# 用于测试上传，稍后用到
+
 @app.route('/wq/',methods=['GET'],strict_slashes=False)
 def wq():
     return render_template('wq.html')
